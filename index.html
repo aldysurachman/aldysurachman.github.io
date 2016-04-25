@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+     <head>
+          <title>Setsuna | Aldy Surachman Portfolio</title>
+          <link rel="stylesheet" type="text/css" href="css/style.css"/>
+          <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+     </head>
+     <body>
+          <div class="main-container">
+               <div class="main-header">
+                    <div id="header-greet">
+                         <div class="greet">
+                              <h1>Lorem Ipsum!</h1>
+                              <p>Dolor sit amet constectuet adispicingi elit</p>
+                         </div>
+                    </div>
+                    <div id="header-nav">
+                         <div class="nav small-container">
+                              <ul>
+                                   <li><a href="#">About</a></li>
+                                   <li><a href="#">Blog</a></li>
+                                   <li class="logo"><a href="#">Setsuna</a></li>
+                                   <li><a href="#">Portfolios</a></li>
+                                   <li><a href="#">Contact</a></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+               <div class="main-content">
+                    <div id="content-about" class="small-container">
+                         <div class="about">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem natus magni, omnis quae. Quae recusandae velit nemo aspernatur voluptatum adipisci sit, magni, quo unde. Ex, fugiat mollitia atque doloribus fuga. Sequi vel ducimus qui nostrum quia temporibus molestias, quae deserunt corporis asperiores, odit esse natus est voluptate voluptatibus nobis impedit, sed et. Et eius est, soluta dolore sit ab amet maiores! Quia asperiores quaerat ipsa, a modi vitae cumque, quasi sapiente error iure voluptatibus?</p>
+                         </div>
+                    </div>
+                    <div id="content-portfolio" class="small-container">
+                         <div class="portfolio">
+                              <ul>
+                                   <li>
+                                        <img src="img/1.jpg" alt="">
+                                        <div class="desc-container">
+                                             <div class="desc">
+                                                  <p><i class="fa fa-check-circle fa-fw"></i>&nbsp;Lorem Ipsum</p>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <img src="img/2.jpg" alt="">
+                                        <div class="desc-container">
+                                             <div class="desc">
+                                                  <p><i class="fa fa-check-circle fa-fw"></i>&nbsp;Lorem Ipsum</p>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <img src="img/3.jpg" alt="">
+                                        <div class="desc-container">
+                                             <div class="desc">
+                                                  <p><i class="fa fa-check-circle fa-fw"></i>&nbsp;Lorem Ipsum</p>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <img src="img/4.jpg" alt="">
+                                        <div class="desc-container">
+                                             <div class="desc">
+                                                  <p><i class="fa fa-check-circle fa-fw"></i>&nbsp;Lorem Ipsum</p>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <img src="img/5.jpg" alt="">
+                                        <div class="desc-container">
+                                             <div class="desc">
+                                                  <p><i class="fa fa-check-circle fa-fw"></i>&nbsp;Lorem Ipsum</p>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <img src="img/6.jpg" alt="">
+                                        <div class="desc-container">
+                                             <div class="desc">
+                                                  <p><i class="fa fa-check-circle fa-fw"></i>&nbsp;Lorem Ipsum</p>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <img src="img/7.jpg" alt="">
+                                        <div class="desc-container">
+                                             <div class="desc">
+                                                  <p><i class="fa fa-check-circle fa-fw"></i>&nbsp;Lorem Ipsum</p>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <img src="img/8.jpg" alt="">
+                                        <div class="desc-container">
+                                             <div class="desc">
+                                                  <p><i class="fa fa-check-circle fa-fw"></i>&nbsp;Lorem Ipsum</p>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+               <div class="main-footer">
+                    <div id="footer-social-nav">
+					<div class="nav small-container">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
+							<li><a href="#"><i class="fa fa-github fa-fw"></i></a></li>
+						</ul>
+					</div>
+                    </div>
+                    <div id="footer-copyright">
+                         <div class="copyright small-container">
+					     <p>Made with <i class="fa fa-heart fa-fw"></i> in Bandung</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <script src="js/jquery-2.2.2.min.js"></script>
+          <script>
+               $(function(){
+                    fixedBar();
+               });
+
+               function fixedBar(){
+                    $(window).scroll(function(){
+                         if($(document).scrollTop() > 644 ){
+                              $('#header-nav').css({'position' : 'fixed', 'bottom' : 'auto'});
+                              $("#header-nav").addClass('fixed');
+                              $("#header-nav .nav").css('background','rgba(255,255,255,.9)');
+                              $("#content-about").addClass('addPadding');
+                         } else {
+                              $(".fixed").removeClass();
+                              $('#header-nav').css({'position' : 'absolute', 'bottom' : '0'});
+                              $("#header-nav .nav").css('background','#fcfcfc');
+                              $("#content-about").removeClass('addPadding');
+                         }
+                    });
+               }
+          </script>
+     </body>
+</html>
